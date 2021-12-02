@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="6" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="xmlSuite" duration-ms="31455" started-at="2021-12-02T13:04:19 MSK" finished-at="2021-12-02T13:04:51 MSK">
+    <groups>
+    </groups>
+    <test name="chrome" duration-ms="31368" started-at="2021-12-02T13:04:19 MSK" finished-at="2021-12-02T13:04:51 MSK">
+      <class name="tests.FirstTest">
+        <test-method status="PASS" signature="Start(java.lang.String)[pri:0, instance:tests.FirstTest@3224f60b]" name="Start" is-config="true" duration-ms="11076" started-at="2021-12-02T13:04:19 MSK" finished-at="2021-12-02T13:04:31 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Start -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:tests.FirstTest@3224f60b]" name="test1" duration-ms="20237" started-at="2021-12-02T13:04:31 MSK" finished-at="2021-12-02T13:04:51 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.FirstTest@3224f60b]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-12-02T13:04:51 MSK" finished-at="2021-12-02T13:04:51 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.FirstTest -->
+    </test> <!-- chrome -->
+    <test name="firefox" duration-ms="31455" started-at="2021-12-02T13:04:19 MSK" finished-at="2021-12-02T13:04:51 MSK">
+      <class name="tests.FirstTest">
+        <test-method status="PASS" signature="Start(java.lang.String)[pri:0, instance:tests.FirstTest@1f28c152]" name="Start" is-config="true" duration-ms="15713" started-at="2021-12-02T13:04:20 MSK" finished-at="2021-12-02T13:04:35 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Start -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:tests.FirstTest@1f28c152]" name="test1" duration-ms="15702" started-at="2021-12-02T13:04:35 MSK" finished-at="2021-12-02T13:04:51 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.FirstTest@1f28c152]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-12-02T13:04:51 MSK" finished-at="2021-12-02T13:04:51 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.FirstTest -->
+    </test> <!-- firefox -->
+  </suite> <!-- xmlSuite -->
+</testng-results>
