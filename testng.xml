@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite1" parallel="tests" thread-count="2"  >
+<suite name="Suite1" parallel="tests" thread-count="3"  >
     <test name="chrome" thread-count="1" >
         <parameter name="browser" value="chrome"/>
         <classes>
@@ -9,6 +9,12 @@
     </test>
     <test name="firefox" thread-count="1" >
         <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.FirstTest"/>
+        </classes>
+    </test>
+    <test name="opera" thread-count="1" >
+        <parameter name="browser" value="opera"/>
         <classes>
             <class name="tests.FirstTest"/>
         </classes>

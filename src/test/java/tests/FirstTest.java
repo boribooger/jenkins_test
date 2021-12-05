@@ -10,6 +10,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.*;
+import other.GoogleConstant;
 import other.OnlinerConstants;
 import pageobjects.HomePage;
 import pageobjects.TiresPage;
@@ -39,13 +40,19 @@ public class FirstTest {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         if(browser.equals("firefox")) {
             capabilities.setCapability("browserName", "firefox");
-            capabilities.setCapability("browserVersion", "92.0");
+            capabilities.setCapability("browserVersion", "94.0");
             capabilities.setCapability("enableVNC", true);
             capabilities.setCapability("enableVideo", false);
         }
-        if(browser.equals("chrome")) {
+        else if(browser.equals("chrome")) {
             capabilities.setCapability("browserName", "chrome");
-            capabilities.setCapability("browserVersion", "95.0");
+            capabilities.setCapability("browserVersion", "96.0");
+            capabilities.setCapability("enableVNC", true);
+            capabilities.setCapability("enableVideo", false);
+        }
+        else if(browser.equals("opera")) {
+            capabilities.setCapability("browserName", "opera");
+            capabilities.setCapability("browserVersion", "81.0");
             capabilities.setCapability("enableVNC", true);
             capabilities.setCapability("enableVideo", false);
         }
@@ -89,10 +96,10 @@ public class FirstTest {
                 .getClass()
                 .getEnclosingMethod()
                 .getName());
-        assertThat(Steps.openUrl(OnlinerConstants.ONLINER_URL).getCurrentUrl(), is("https://www.onliner.by/"));
+        assertThat(Steps.openUrl(GoogleConstant.GOOGLE_URL).getCurrentUrl(), is("https://www.google.com/"));
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void test2(){
         log.info(new Object() {}
                 .getClass()
@@ -101,7 +108,7 @@ public class FirstTest {
         assertThat(Steps.getElementText(HomePage.button, OnlinerConstants.ONLINER_URL), is("Автомобильные шины"));
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void test3() throws InterruptedException {
         log.info(new Object() {}
                 .getClass()

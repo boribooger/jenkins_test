@@ -1,4 +1,38 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 92.69 s - in TestSuite
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 133.11 s <<< FAILURE! - in TestSuite
+test1(tests.FirstTest)  Time elapsed: 100.305 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+
+Command duration or timeout: 90.06 seconds
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'MacBook-Air-ONE.local', ip: '2a02:d247:1102:19fc:f8ea:703b:3994:b0c0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [d9b60d8ba391b23754d312ed52884c1d, get {url=https://www.onliner.by}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.GAD687}, goog:chromeOptions: {debuggerAddress: localhost:43521}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d9b60d8ba391b23754d312ed52884c1d
+	at tests.FirstTest.test1(FirstTest.java:92)
+
+test2(tests.FirstTest)  Time elapsed: 5.048 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+session timed out or not found
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'MacBook-Air-ONE.local', ip: '2a02:d247:1102:19fc:f8ea:703b:3994:b0c0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [d9b60d8ba391b23754d312ed52884c1d, get {url=https://www.onliner.by}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.GAD687}, goog:chromeOptions: {debuggerAddress: localhost:43521}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d9b60d8ba391b23754d312ed52884c1d
+	at tests.FirstTest.test2(FirstTest.java:101)
+
+test3(tests.FirstTest)  Time elapsed: 5.034 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+session timed out or not found
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'MacBook-Air-ONE.local', ip: '2a02:d247:1102:19fc:f8ea:703b:3994:b0c0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [d9b60d8ba391b23754d312ed52884c1d, get {url=https://www.onliner.by}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.GAD687}, goog:chromeOptions: {debuggerAddress: localhost:43521}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d9b60d8ba391b23754d312ed52884c1d
+	at tests.FirstTest.test3(FirstTest.java:110)
+
