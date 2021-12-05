@@ -78,7 +78,7 @@
                 <configuration>
                     <argLine>-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
                     <suiteXmlFiles>
-                        <suiteXmlFile>/Users/one/IdeaProjects/funll_test/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <systemProperties>
                         <property>
